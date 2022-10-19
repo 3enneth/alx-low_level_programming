@@ -4,18 +4,19 @@
 /**
  * main-program entry point
  *
- * Return:() if no error, non =-zero value if error.
+ * Return:() if no error, non-zero value if error.
  */
 int main(void)
 {
-	int n;int Idigit;
+	int n;
+	int Idigit;
 
 	srand(time(0));
 	n = rand()  - RAND_MAX / 2;
 	Idigit = n % 10;
 	if (Idigit > 5)
 	{
-		printd("Last digit of %d and is greater than 5\n", n, Idigit);
+		printf("Last digit of %d and is greater than 5\n", n, Idigit);
 	}
 	else if (Idigit == 0)
 	{
